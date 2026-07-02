@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ui-wrapper" id="ui-wrapper">
+        <div class="panel-row">
+        <div class="panel left-panel">
+            <div class="car-info">
+                <div class="class-badge">CLASS <span id="veh-class">-</span></div>
+                <div class="car-brand" id="veh-brand">-</div>
+                <h1 class="car-model" id="veh-model">-</h1>
+                <div class="power-score">
+                    <span>POWER SCORE</span>
+                    <div class="score-value" id="veh-power"><i class="fa-solid fa-bolt outline-icon"></i> <span id="veh-power-num">0</span></div>
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-row">
+                    <div class="stat-header"><span>POWER</span><span id="stat-power">0</span></div>
+                    <div class="progress-bar"><div class="progress-fill" id="bar-power" style="width:0%;"></div></div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-header"><span>TOP SPEED</span><span id="stat-speed">0</span></div>
+                    <div class="progress-bar"><div class="progress-fill" id="bar-speed" style="width:0%;"></div></div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-header"><span>ACCELERATION</span><span id="stat-accel">0</span></div>
+                    <div class="progress-bar"><div class="progress-fill" id="bar-accel" style="width:0%;"></div></div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-header"><span>BRAKES</span><span id="stat-brake">0</span></div>
+                    <div class="progress-bar"><div class="progress-fill" id="bar-brake" style="width:0%;"></div></div>
+                </div>
+            </div>
+            <div class="checkout-section">
+                <div class="cart-total">
+                    <span>TOTAL COST</span>
+                    <span class="price" id="total-price">$0</span>
+                </div>
+                <button class="btn-primary" id="btn-install">INSTALL UPGRADES</button>
+                <button class="btn-secondary" id="btn-close">CANCEL</button>
+            </div>
+        </div>
+        <div class="panel right-panel">
+            <div class="category-nav">
+                <button class="nav-btn active" data-tab="visuals">VISUALS</button>
+                <button class="nav-btn" data-tab="performance">PERFORMANCE</button>
+                <button class="nav-btn" data-tab="colors">COLORS</button>
+            </div>
+            <div class="tab-content active" id="tab-visuals"></div>
+            <div class="tab-content" id="tab-performance"></div>
+            <div class="tab-content" id="tab-colors"></div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
